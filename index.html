@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="content" data-js="img-background">
+      <div class="items-weather">
+        <span data-js="temp"></span>
+        <div class="info-temp">
+          <div class="info-country">
+            <span data-js="country"></span>
+            <span data-js="hour"></span>
+          </div>
+          <img data-js="condition" />
+        </div>
+      </div>
+
+      <div class="weather-info">
+        <div class="search">
+          <form data-js="form">
+            <input
+              data-js="input"
+              id="cityName"
+              type="text"
+              placeholder="Search a state of world"
+              value
+              required
+            />
+            <button type="submit">
+              <span class="material-icons"> search </span>
+            </button>
+          </form>
+        </div>
+
+        <div data-js="bckp-cities" class="cities-backup"></div>
+
+        <hr />
+        <div class="details">
+          <h2>Weather Details</h2>
+          <div>
+            <span>Cloudy</span>
+            <span data-js="cloudy"></span>
+          </div>
+          <div>
+            <span>Humidity</span>
+            <span data-js="humidity"></span>
+          </div>
+          <div>
+            <span>Wind</span>
+            <span data-js="wind"></span>
+          </div>
+          <div>
+            <span>Thermal sensation</span>
+            <span data-js="feelsLike"></span>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

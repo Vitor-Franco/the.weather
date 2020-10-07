@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  background: #211430;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.content .items-weather {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  bottom: 15%;
+  left: 5%;
+}
+
+.items-weather .info-temp {
+  display: flex;
+}
+
+.items-weather .info-country {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-weather [data-js="temp"] {
+  color: #f7f7f7;
+  font-size: 7rem;
+}
+.items-weather [data-js="country"] {
+  color: #f7f7f7;
+  font-size: 2.6rem;
+}
+
+.content .weather-info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #292727e3;
+  position: absolute;
+  right: 0;
+}
+
+.material-icons {
+  font-size: 30px !important;
+  color: rgb(136, 135, 135);
+}
+
+.search {
+  padding: 0 0 35px 50px;
+  display: flex;
+}
+
+.search form {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.search form input {
+  background: none;
+  border: none;
+  height: 40px;
+  width: 70%;
+  border-bottom: 1px solid #cccccca1;
+  padding: 10px 0px;
+  outline: none;
+  align-self: flex-end;
+  color: #f7f7f7;
+}
+
+.search form button {
+  padding: 20px;
+  border: none;
+  outline: none;
+  width: 70px;
+  cursor: pointer;
+  height: 70px;
+}
+
+.cities-backup,
+.details {
+  padding: 0 50px;
+}
+
+.weather-info .cities-backup {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.cities-backup span {
+  padding: 15px 0;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.cities-backup span:hover {
+  color: #f7f7f7;
+}
+
+.weather-info .details {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+hr {
+  border-bottom: 1px solid #cccccc56;
+  margin: 30px 50px;
+}
+
+.details h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 50px 0;
+}
+
+.details div {
+  margin: 15px 0;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details span[data-js] {
+  color: #fff;
+}
